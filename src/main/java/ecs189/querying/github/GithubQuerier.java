@@ -34,6 +34,11 @@ public class GithubQuerier {
             Date date = inFormat.parse(creationDate);
             String formatted = outFormat.format(date);
 
+            //Get commits. Note, JSONObject event = "fields"
+            JSONObject payload = event.getJSONObject("payload");
+            JSONArray commits = payload.getJSONArray("commits");
+
+
             // Add type of event as header
             sb.append("<h3 class=\"type\">");
             sb.append(type);
@@ -42,6 +47,36 @@ public class GithubQuerier {
             sb.append(" on ");
             sb.append(formatted);
             sb.append("<br />");
+
+
+            //Insert commits
+            sb.append("<br>");
+            sb.append("<table>");
+            sb.append("<col width=\"200\">");
+            sb.append("<tr>");
+            sb.append("<th>SHA</th>");
+            sb.append("<th>Message</th>");
+            sb.append("</tr>");
+
+            for (int j = 0; j < commits.length(); j++) {
+                JSONObject currentCommit = commits.getJSONObject(j);
+                String sha = currentCommit.getString("sha");
+                sha = sha.substring(0,8);
+                String msg = currentCommit.getString("message");
+                sb.append("<tr>");
+                sb.append("<td>");
+                sb.append(sha);
+                sb.append("</td>");
+//                sb.append("<br />");
+                sb.append("<td>");
+                sb.append(msg);
+                sb.append("</td>");
+//                sb.append("<br />");
+                sb.append("</tr>");
+            }
+            sb.append("</table>");
+            sb.append("<br>");
+
             // Add collapsible JSON textbox (don't worry about this for the homework; it's just a nice CSS thing I like)
             sb.append("<a data-toggle=\"collapse\" href=\"#event-" + i + "\">JSON</a>");
             sb.append("<div id=event-" + i + " class=\"collapse\" style=\"height: auto;\"> <pre>");
@@ -60,7 +95,11 @@ public class GithubQuerier {
         System.out.println(json);
         JSONArray events = json.getJSONArray("root");
         for (int i = 0; i < events.length() && i < 10; i++) {
-            eventList.add(events.getJSONObject(i));
+            JSONObject fields = events.getJSONObject(i);
+            //JSONObject user = fields.getJSONObject("user");
+            if (fields.getString("type").equals("PushEvent")) {
+                eventList.add(events.getJSONObject(i));
+            }
         }
         return eventList;
     }
