@@ -16,7 +16,7 @@
   </head>
   <body>
   <div id="core">
-    <h2>What Have I Been Up To?</h2>
+    <h2>What Have I Been Up To v2?</h2>
     <form action="index.jsp" method="GET">
       <div class="form-group">
         <label for="user"><h3>Github username:</h3></label>
