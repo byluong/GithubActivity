@@ -1,6 +1,5 @@
 #/bin/bash
 #Hotswaps between 2 dockers for nginx
-#Does not error check for if specified image is already running
 
 PREV=$(docker ps -a -f "name=web" | grep -oh "\w*web\w")
 
