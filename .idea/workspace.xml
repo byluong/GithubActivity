@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fcce467-84d3-48ec-821d-a99f2fa2fd52" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HW4/nginx-rev/Dockerfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HW4/nginx-rev/docker-compose.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HW4/nginx-rev/nginx.conf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.SUBMISSION" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/nginx/cleanup.sh" afterPath="$PROJECT_DIR$/HW4/cleanup.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/nginx/dorun.sh" afterPath="$PROJECT_DIR$/HW4/nginx-rev/dorun.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/nginx/hotswap.sh" afterPath="$PROJECT_DIR$/HW4/hotswap.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/nginx/init.sh" afterPath="$PROJECT_DIR$/HW4/nginx-rev/init.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/nginx/swap1.sh" afterPath="$PROJECT_DIR$/HW4/nginx-rev/swap1.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/nginx/swap2.sh" afterPath="$PROJECT_DIR$/HW4/nginx-rev/swap2.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nginx/hotswap.sh" afterPath="$PROJECT_DIR$/nginx/hotswap.sh" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,7 +40,7 @@
         </entry>
       </file>
       <file leaf-file-name="init.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nginx/init.sh">
+        <entry file="file://$PROJECT_DIR$/HW4/nginx-rev/init.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="245">
               <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
@@ -52,7 +60,7 @@
         </entry>
       </file>
       <file leaf-file-name="swap1.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nginx/swap1.sh">
+        <entry file="file://$PROJECT_DIR$/HW4/nginx-rev/swap1.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="21" />
@@ -72,7 +80,7 @@
         </entry>
       </file>
       <file leaf-file-name="dorun.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nginx/dorun.sh">
+        <entry file="file://$PROJECT_DIR$/HW4/nginx-rev/dorun.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1155">
               <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
@@ -82,24 +90,21 @@
         </entry>
       </file>
       <file leaf-file-name="hotswap.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nginx/hotswap.sh">
+        <entry file="file://$PROJECT_DIR$/HW4/hotswap.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            <state relative-caret-position="245">
+              <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="70">
-                <caret line="2" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="9" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HW4/nginx-rev/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,7 +112,7 @@
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nginx/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1008">
+            <state relative-caret-position="1400">
               <caret line="40" column="47" lean-forward="false" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
               <folding />
             </state>
@@ -159,8 +164,8 @@
         <option value="$PROJECT_DIR$/src/main/java/ecs189/querying/github/GithubQuerier.java" />
         <option value="$PROJECT_DIR$/nginx/swap3.sh" />
         <option value="$PROJECT_DIR$/nginx/dorun.sh" />
-        <option value="$PROJECT_DIR$/nginx/hotswap.sh" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/nginx/hotswap.sh" />
       </list>
     </option>
   </component>
@@ -330,13 +335,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="HW4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GithubActivity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GithubActivity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="activity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -383,7 +402,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -404,15 +423,18 @@
     <property name="last_opened_file_path" value="C:/Apache/apache-tomcat-9.0.0.M17" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Symbo\IdeaProjects\GithubActivity\HW4\nginx-rev" />
+      <recent name="C:\Users\Symbo\IdeaProjects\GithubActivity\HW4" />
+      <recent name="C:\Users\Symbo\IdeaProjects\GithubActivity\activity" />
+      <recent name="C:\Users\Vincent\IdeaProjects\GithubActivity\src\main\webapp" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Symbo\IdeaProjects\GithubActivity\HW4\nginx-rev" />
       <recent name="C:\Users\Symbo\IdeaProjects\GithubActivity\activityold" />
       <recent name="C:\Users\Vincent\IdeaProjects\GithubActivity\nginx" />
       <recent name="C:\Users\Vincent\IdeaProjects\GithubActivity\GithubActivity_war" />
       <recent name="C:\Users\Vincent\IdeaProjects\GithubActivity\src" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Symbo\IdeaProjects\GithubActivity\activity" />
-      <recent name="C:\Users\Vincent\IdeaProjects\GithubActivity\src\main\webapp" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.0.M17">
@@ -951,6 +973,7 @@
       <workItem from="1489533974909" duration="8752000" />
       <workItem from="1489710638929" duration="11800000" />
       <workItem from="1489736888189" duration="5773000" />
+      <workItem from="1489744339143" duration="146000" />
     </task>
     <task id="LOCAL-00001" summary="GithubQuerier v2 working">
       <created>1489545710401</created>
@@ -970,7 +993,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65892000" />
+    <option name="totallyTimeSpent" value="66038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-12" y="-12" width="2760" height="1778" extended-state="6" />
@@ -998,7 +1021,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21941489" sideWeight="0.49791232" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.49791232" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24454477" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24793078" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -1032,15 +1055,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nginx/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/dorun.sh">
+    <entry file="file://$PROJECT_DIR$/HW4/nginx-rev/dorun.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
           <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
@@ -1048,7 +1063,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/hotswap.sh">
+    <entry file="file://$PROJECT_DIR$/HW4/hotswap.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1064,7 +1079,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/init.sh">
+    <entry file="file://$PROJECT_DIR$/HW4/nginx-rev/init.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
@@ -1088,7 +1103,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/swap1.sh">
+    <entry file="file://$PROJECT_DIR$/HW4/nginx-rev/swap1.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
@@ -1096,7 +1111,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/swap2.sh">
+    <entry file="file://$PROJECT_DIR$/HW4/nginx-rev/swap2.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1287,7 +1302,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/swap2.sh">
+    <entry file="file://$PROJECT_DIR$/HW4/nginx-rev/swap2.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
@@ -1321,13 +1336,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nginx/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
+        <state relative-caret-position="1400">
           <caret line="40" column="47" lean-forward="false" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/init.sh">
+    <entry file="file://$PROJECT_DIR$/HW4/nginx-rev/init.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
@@ -1343,7 +1358,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/swap1.sh">
+    <entry file="file://$PROJECT_DIR$/HW4/nginx-rev/swap1.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="21" />
@@ -1359,7 +1374,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/dorun.sh">
+    <entry file="file://$PROJECT_DIR$/HW4/nginx-rev/dorun.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
           <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
@@ -1367,21 +1382,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+    <entry file="file://$PROJECT_DIR$/HW4/nginx-rev/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.SUBMISSION">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="70">
-            <caret line="2" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="9" />
+          <first_editor relative-caret-position="665">
+            <caret line="19" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/hotswap.sh">
+    <entry file="file://$PROJECT_DIR$/HW4/hotswap.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="245">
+          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
           <folding />
         </state>
       </provider>
