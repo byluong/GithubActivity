@@ -28,6 +28,9 @@ docker-compose -p ecs189 up  &
 
 sleep 10 && docker exec ecs189_proxy_1 /bin/bash /bin/init.sh
 echo "redirecting to the service" 
-echo "...nginx restarted, should be ready to go!" 
+echo "...nginx restarted, should be ready to go!"
+
+docker rename ecs189_web1_1 web1
+echo "Renamed ecs189_web1_1 to web1"
 
 

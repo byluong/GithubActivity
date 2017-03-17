@@ -91,16 +91,32 @@ public class GithubQuerier {
         List<JSONObject> eventList = new ArrayList<JSONObject>();
         String url = BASE_URL + user + "/events";
         System.out.println(url);
-        JSONObject json = Util.queryAPI(new URL(url));
-        System.out.println(json);
-        JSONArray events = json.getJSONArray("root");
-        for (int i = 0; i < events.length() && i < 10; i++) {
-            JSONObject fields = events.getJSONObject(i);
-            //JSONObject user = fields.getJSONObject("user");
-            if (fields.getString("type").equals("PushEvent")) {
-                eventList.add(events.getJSONObject(i));
+
+        int page = 1;
+        boolean empty = false;
+        int numFound = 0;
+
+        do {
+            JSONObject json = Util.queryAPI(new URL(url + "?page=" + page));
+            System.out.println(json);
+            JSONArray events = json.getJSONArray("root");
+
+            if (events.length() > 0) { //if array not empty
+                for (int i = 0; i < events.length() && numFound < 10; i++) {
+                    JSONObject fields = events.getJSONObject(i);
+                    if (fields.getString("type").equals("PushEvent")) {
+                        eventList.add(events.getJSONObject(i));
+                        numFound++;
+                    }
+                }
             }
+            else {
+                empty = true;
+            }
+            page++;
         }
+        while (!empty && numFound < 10); //loop again if number of push events found < 10, and we still have pages
+
         return eventList;
     }
 }
